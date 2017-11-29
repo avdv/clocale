@@ -9,13 +9,9 @@ Gem::Specification.new do |spec|
 
   spec.extensions = %w[ext/clocale/extconf.rb]
 
-  spec.files = %w[
-    MIT-LICENSE
-    Rakefile
-    ext/clocale/extconf.rb
-    ext/clocale/clocale.c
-    lib/clocale.rb
-  ]
+  spec.files = `git ls-files -z`.split("\x0").reject do |f|
+    f.match(%r{^.gitignore})
+  end
 
   spec.add_development_dependency 'rake'
   spec.add_development_dependency 'rake-compiler'
