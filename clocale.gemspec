@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^.gitignore})
   end
 
-  spec.add_development_dependency 'rake'
-  spec.add_development_dependency 'rake-compiler'
-  spec.add_development_dependency 'rubygems-tasks'
+  spec.add_development_dependency 'rake', '~> 12.3'
+  spec.add_development_dependency 'rake-compiler', '~> 1.0'
+  spec.add_development_dependency 'rubygems-tasks', '~> 0.2'
 end
