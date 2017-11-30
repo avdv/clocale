@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Claudio Bley']
   spec.email         = ['claudio.bley@gmail.com']
   spec.summary       = "A Ruby gem that wraps C locale functions."
-  spec.homepage      = 'https://github.com/avdv'
+  spec.homepage      = 'https://github.com/avdv/clocale'
   spec.license       = 'MIT'
 
   spec.extensions = %w[ext/clocale/extconf.rb]
