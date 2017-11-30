@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'clocale'
-  spec.version       = '0.0.1'
+  spec.version       = '0.0.2'
   spec.authors       = ['Claudio Bley']
   spec.email         = ['claudio.bley@gmail.com']
   spec.summary       = "A Ruby gem that wraps C locale functions."
