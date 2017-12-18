@@ -73,7 +73,9 @@ Init_clocale(void) {
   constant(LC_ALL);
   constant(LC_COLLATE);
   constant(LC_CTYPE);
+#  ifdef LC_MESSAGES
   constant(LC_MESSAGES);
+#  endif
   constant(LC_MONETARY);
   constant(LC_NUMERIC);
   constant(LC_TIME);
