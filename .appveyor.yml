@@ -1,0 +1,26 @@
+
+version: "{build}"
+
+environment:
+  matrix:
+    - RUBY_VERSION: 24
+    - RUBY_VERSION: 24-x64
+
+cache:
+  - vendor/bundle
+
+init:
+  - set PATH=C:\Ruby%RUBY_VERSION%\bin;%PATH%
+
+install:
+  - bundle install --path vendor/bundle
+
+build: off
+
+before_test:
+  - ruby -v
+  - gem -v
+  - bundle -v
+
+test_script:
+  - bundle exec rake -rdevkit
