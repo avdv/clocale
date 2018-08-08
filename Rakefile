@@ -6,6 +6,9 @@ Gem::Tasks.new
 require 'rspec/core/rake_task'
 RSpec::Core::RakeTask.new
 
+require 'rubocop/rake_task'
+RuboCop::RakeTask.new
+
 Rake::ExtensionTask.new 'clocale' do |ext|
   ext.lib_dir = 'lib/clocale'
 end
@@ -17,4 +20,4 @@ task test: %w[compile] do
 end
 
 task spec: :compile
-task default: :spec
+task default: %i[spec rubocop]

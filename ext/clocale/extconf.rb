@@ -2,7 +2,7 @@ require 'mkmf'
 
 def check_functions
   %w[setlocale strcoll strxfrm].each do |func|
-    abort "missing function `#{ func }``" unless have_func func
+    abort "missing function `#{func}``" unless have_func func
   end
 end
 
