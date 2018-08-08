@@ -1,3 +1,6 @@
+conditions: v1
+
+if: type = pull_request OR tag IS present
 
 os:
   - linux
