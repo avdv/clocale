@@ -1,0 +1,11 @@
+require: rubocop-rspec
+
+Metrics/LineLength:
+  Max: 100
+
+Style/BlockComments:
+  Exclude:
+    - 'spec/spec_helper.rb'
+
+Layout/EndOfLine:
+  EnforcedStyle: lf # enforce LF line endings on all platforms
