@@ -50,7 +50,7 @@ lc_strxfrm(VALUE self, VALUE str) {
       size = needed + 1;
       buf = realloc(buf, size);
 
-      if (buf == NULL) rb_raise(rb_eNoMemError, "could not allocate %u bytes", size);
+      if (buf == NULL) rb_raise(rb_eNoMemError, "could not allocate %zu bytes", size);
     }
   }
 
