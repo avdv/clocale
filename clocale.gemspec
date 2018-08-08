@@ -13,6 +13,7 @@ Gem::Specification.new do |spec|
     f.match(%r{^.gitignore})
   end
 
+  spec.add_development_dependency 'codecov', '~> 0.1.10'
   spec.add_development_dependency 'rake', '~> 12.3'
   spec.add_development_dependency 'rake-compiler', '~> 1.0'
   spec.add_development_dependency 'rspec', '~> 3.7'
