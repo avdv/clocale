@@ -32,7 +32,13 @@ lc_setlocale(VALUE self, VALUE category, VALUE locale) {
   char* ret = setlocale(cat, loc);
 
   if (ret == NULL) {
-    rb_raise(rb_eRuntimeError, "error calling setlocale(%d, \"%s\")", cat, loc);
+    VALUE sym = rb_funcall(self, rb_intern("lookup_const"), 1, category);
+
+    if (NIL_P(sym)) {
+      rb_raise(rb_eRuntimeError, "error calling `setlocale(%d, \"%s\")`", cat, loc);
+    } else {
+      rb_raise(rb_eRuntimeError, "error calling `setlocale(%" PRIsVALUE ", \"%s\")`", sym, loc);
+    }
   } else {
     return rb_str_new2(ret);
   }

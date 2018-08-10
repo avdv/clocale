@@ -9,3 +9,6 @@ Style/BlockComments:
 
 Layout/EndOfLine:
   EnforcedStyle: lf # enforce LF line endings on all platforms
+
+Style/BlockDelimiters:
+  EnforcedStyle: braces_for_chaining
