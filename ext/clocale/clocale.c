@@ -2,6 +2,25 @@
 #include <locale.h>
 #include <string.h>
 
+/*
+ * Changes or queries the locale for a specific category.
+ *
+ * @param category [Integer]     one of the constants defined in the CLocale module
+ * @param locale   [String, nil] Possible values for `locale`:
+ *
+ *    <tt>nil</tt>::  query the current setting, does not change the programs locale
+ *
+ *    <tt>""</tt>::   specifies an implementation defined native environment
+ *
+ *    <tt>"C"</tt>::  specifies a minimal "portable" locale
+ *
+ * @return [String] the value associated with the category
+ *
+ * @raise [RuntimeError] if setting the locale fails
+ *
+ * Calls the <tt>setlocale()</tt> C library function, see
+ * http://pubs.opengroup.org/onlinepubs/009695399/functions/setlocale.html.
+ */
 static VALUE
 lc_setlocale(VALUE self, VALUE category, VALUE locale) {
   const char* loc = NULL;
@@ -19,6 +38,17 @@ lc_setlocale(VALUE self, VALUE category, VALUE locale) {
   }
 }
 
+/*
+ * Compares two Strings using the current locale.
+ *
+ * @param s1 [String]
+ * @param s2 [String]
+ *
+ * @return [Integer] -1, 0, +1 if s1 is less than, equal to, or greater than s2 respectively
+ *
+ * Calls the <tt>strcoll()</tt> C library function, see
+ * http://pubs.opengroup.org/onlinepubs/009695399/functions/strcoll.html.
+ */
 static VALUE
 lc_strcoll(VALUE self, VALUE s1, VALUE s2) {
   int ret = strcoll(StringValueCStr(s1), StringValueCStr(s2));
@@ -30,6 +60,19 @@ lc_strcoll(VALUE self, VALUE s1, VALUE s2) {
   return INT2FIX(ret);
 }
 
+/*
+ * Transform the given String into a canonical form for char comparison.
+ *
+ * This is useful for sorting a list using Enumerable#sort_by which does a
+ * Schwartzian transform.
+ *
+ * @param s [String]
+ *
+ * @return [String] transformed according to the current <tt>LC_COLLATE</tt> locale setting
+ *
+ * Calls the <tt>strxfrm</tt> C library function, see
+ * http://pubs.opengroup.org/onlinepubs/009695399/functions/strxfrm.html.
+ */
 static VALUE
 lc_strxfrm(VALUE self, VALUE str) {
   VALUE ret;
