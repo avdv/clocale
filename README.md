@@ -1,5 +1,7 @@
-# clocale [![travis-badge][]][travis] [![appveyor-badge][]][appveyor] [![codecov-badge][]][codecov]
+# clocale [![rubygem-badge][]][rubygem] [![travis-badge][]][travis] [![appveyor-badge][]][appveyor] [![codecov-badge][]][codecov]
 
+[rubygem]:        https://badge.fury.io/rb/clocale
+[rubygem-badge]:  https://badge.fury.io/rb/clocale.svg
 [travis]:         https://travis-ci.org/avdv/clocale
 [travis-badge]:   https://travis-ci.org/avdv/clocale.svg?branch=master
 [appveyor]:       https://ci.appveyor.com/project/avdv/clocale/branch/master
