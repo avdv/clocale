@@ -14,10 +14,10 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_development_dependency 'codecov', '~> 0.1.10'
-  spec.add_development_dependency 'rake', '~> 12.3'
-  spec.add_development_dependency 'rake-compiler', '~> 1.0'
-  spec.add_development_dependency 'rspec', '~> 3.7'
-  spec.add_development_dependency 'rubocop', '~> 0.58'
-  spec.add_development_dependency 'rubocop-rspec', '~> 1.27'
-  spec.add_development_dependency 'rubygems-tasks', '~> 0.2'
+  spec.add_development_dependency 'rake', '~> 12.3.1'
+  spec.add_development_dependency 'rake-compiler', '~> 1.0.5'
+  spec.add_development_dependency 'rspec', '~> 3.7.0'
+  spec.add_development_dependency 'rubocop', '~> 0.58.2'
+  spec.add_development_dependency 'rubocop-rspec', '~> 1.28.0'
+  spec.add_development_dependency 'rubygems-tasks', '~> 0.2.4'
 end
