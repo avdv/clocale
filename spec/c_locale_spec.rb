@@ -1,9 +1,11 @@
 require 'clocale'
 
 RSpec.describe CLocale do
+  subject(:clocale) { ::CLocale }
+
   %i[LC_ALL LC_COLLATE LC_CTYPE LC_MONETARY LC_NUMERIC LC_TIME].each do |const|
-    it "has #{const} constant" do
-      is_expected.to(satisfy { |m| m.const_defined? const })
+    it "has #{const} defined" do
+      expect(clocale.const_defined?(const)).to be(true)
     end
   end
 
