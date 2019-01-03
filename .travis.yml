@@ -1,3 +1,5 @@
+dist: xenial
+
 conditions: v1
 
 if: branch = master OR tag IS present
@@ -14,8 +16,9 @@ rvm:
   - '2.5'
   - '2.6'
 
-install:
-  - bundle install --path vendor/bundle
+before_install:
+  - gem update --system
+  - gem --version
 
 script:
   - bundle exec rake
