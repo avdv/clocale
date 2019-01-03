@@ -14,8 +14,5 @@ rvm:
   - '2.5'
   - '2.6'
 
-install:
-  - bundle install --path vendor/bundle
-
 script:
   - bundle exec rake
