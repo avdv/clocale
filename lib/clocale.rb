@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 # This module defines the `LC_*` constants and locale functions from the linked
 # C library of the current Ruby interpreter.
 #
