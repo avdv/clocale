@@ -1,5 +1,14 @@
 require: rubocop-rspec
 
+AllCops:
+  Exclude:
+    - 'vendor/**/*'
+  DisplayCopNames: true
+  TargetRubyVersion: 2.3
+
+Metrics/AbcSize:
+  Max: 20
+
 Metrics/LineLength:
   Max: 100
 

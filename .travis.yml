@@ -22,3 +22,13 @@ before_install:
 
 script:
   - bundle exec rake
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: J+HH5P6HdF1+vqsyDzUiKmiqmyvHXSqaTX8CvLNu6ulAQ2XbRCIWbBxCwyhZGryMz55n4ubk5QJkOViNFEjwcaG/yCUBKOCtoYrH8HnEMnd4HH69UO7RaW4LOIa67bRTQm48F2gNcoV9Z5NsuU5W0f3d3IQ8LVbP11gTxSoXpWF7tISjcFJglcmIvFLrF8UICUOOtYeXJXgTmE4GRrylG4dLuo0RJ9wZPiwvqg/3i/KswfAQ5834sFTc5SrcghGqlbVPds+RhAY/OU+b/WF8Ld8dd1TKGCaDKqvrclWbXHPnn1gKGwgDAlVYB8iIW4wn8WGNOdvAYP5DNdERRJbxEnfCMMN3St6jP9n51X5Bwa76Ueh7PUDU3AjgEO4huNers6NfVMp4ruhZdsCNHgqr81/cAiWwsnRXN/Fk+VxhnzUCWpVRWCEyLPNJOk3WjcR2VhLoiAywm+RKiiHPZUmSRezbxwgh9dhrOHwh27LHPwA731KtaoOMJ9r9gHHLOgwiAj7jLhiobLY+3i7Ussz8hsZ6L0fgdE0tawm9L7CIrsqwZ5SPjlFj/oDRGOiw7bQzBwMLEzlKspefrS6JQaF62QTIuV8ccdfn3CXoDoG1ljqv0l+gcbcx+GDhoR/B6L+h0OZj9Pcy20saoMUCIYMx8bvdErL5crhbf225UApDvP4=
+  gem: clocale
+  on:
+    repo: avdv/clocale
+    rvm: '2.5'
+    os: linux
