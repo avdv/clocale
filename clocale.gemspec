@@ -1,6 +1,5 @@
 # frozen_string_literal: true
 
-# rubocop:disable Metrics/BlockLength
 Gem::Specification.new do |spec|
   CLOCALE_VERSION = '0.0.4'
 
@@ -40,4 +39,3 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rubocop-rspec', '~> 1.32.0'
   spec.add_development_dependency 'rubygems-tasks', '~> 0.2.4'
 end
-# rubocop:enable Metrics/BlockLength
