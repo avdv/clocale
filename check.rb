@@ -8,7 +8,7 @@ puts arg
 
 if @stats.directory?
   begin
-    @contents = Dir.entries(arg)
+    @contents = Dir.entries(arg, encoding: Encoding::UTF_8)
 
     @contents.each do |item|
       puts "#{item}: #{File.lstat(File.join(arg, item)).size}"
