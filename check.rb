@@ -10,7 +10,7 @@ puts arg
 
 if @stats.directory?
   begin
-    @contents = Dir.entries(arg, encoding: Encoding::UTF_16)
+    @contents = Dir.entries(arg, encoding: Encoding::UTF_8)
 
     @contents.each do |item|
       puts "#{item.encode(Encoding.default_external, Encoding::UTF_16)}: #{File.lstat(File.join(arg, item)).size}"
