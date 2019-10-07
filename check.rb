@@ -8,10 +8,10 @@ puts arg
 
 if @stats.directory?
   begin
-    @contents = Dir.entries(arg, encoding: Encoding::UTF_8)
+    @contents = Dir.entries(arg, encoding: Encoding::UTF_16)
 
     @contents.each do |item|
-      puts "#{item}: #{File.lstat(File.join(arg, item)).size}"
+      puts "#{item.force_encoding(Encoding.default_external)}: #{File.lstat(File.join(arg, item)).size}"
     rescue => e
       warn "#{item}: #{e}"
     end

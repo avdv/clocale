@@ -3,8 +3,6 @@ version: "{build}"
 
 environment:
   matrix:
-    - RUBY_VERSION: 24
-    - RUBY_VERSION: 24-x64
     - RUBY_VERSION: 25-x64
     - RUBY_VERSION: 26-x64   
 
@@ -25,14 +23,7 @@ before_test:
   - bundle -v
   - ruby -e "puts Encoding.find('filesystem')"
   - echo ch > 杨帆.pdf
-  - ruby -Ku check.rb .
   - ruby check.rb .
-  - ruby -E UTF-8 check.rb .
-  - chcp 65001
-  - chcp
-  - ruby check.rb .
-  - ruby -Ku check.rb .
-  - ruby -E UTF-8 check.rb .
 
 
 test_script:
