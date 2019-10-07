@@ -9,8 +9,10 @@ puts arg
 if @stats.directory?
   @contents = Dir.entries(arg)
 
-  @contents.each do |e|
-    puts e, File.lstat(File.join(arg, e)).size
+  @contents.each do |item|
+    puts "#{item}: #{File.lstat(File.join(arg, item)).size}"
+  rescue => e
+    warn "#{item}: #{e}"
   end
 end
 
