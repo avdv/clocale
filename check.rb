@@ -16,7 +16,7 @@ if @stats.directory?
       warn "#{item}: #{e}"
     end
   rescue StandardError => e
-    puts "#{e}"
+    puts "#{e}: #{Exception.backtrace}"
   end
 end
 

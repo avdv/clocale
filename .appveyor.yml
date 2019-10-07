@@ -27,8 +27,12 @@ before_test:
   - echo ch > 杨帆.pdf
   - ruby -Ku check.rb .
   - ruby check.rb .
+  - ruby -E UTF-8 check.rb .
   - chcp 65001
+  - ruby check.rb .
   - ruby -Ku check.rb .
+  - ruby -E UTF-8 check.rb .
+
 
 test_script:
   - bundle exec rake -rdevkit
