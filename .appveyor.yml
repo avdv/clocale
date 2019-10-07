@@ -28,9 +28,11 @@ before_test:
   - ruby -Ku check.rb .
   - ruby check.rb .
   - ruby -E UTF-8 check.rb .
-  - chcp 65001; ruby check.rb .
-  - chcp 65001; ruby -Ku check.rb .
-  - chcp 65001; ruby -E UTF-8 check.rb .
+  - chcp 65001
+  - chcp
+  - ruby check.rb .
+  - ruby -Ku check.rb .
+  - ruby -E UTF-8 check.rb .
 
 
 test_script:
