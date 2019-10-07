@@ -13,7 +13,7 @@ if @stats.directory?
     @contents = Dir.entries(arg, encoding: Encoding::UTF_8)
 
     @contents.each do |item|
-      puts "#{item.encode(Encoding.default_external, Encoding::UTF_16)}: #{File.lstat(File.join(arg, item)).size}"
+      puts "#{item.encode(Encoding.default_external, Encoding::UTF_8)}: #{File.lstat(File.join(arg, item)).size}"
     rescue => e
       warn "#{item}: #{e}"
     end
