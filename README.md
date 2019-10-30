@@ -2,8 +2,8 @@
 
 [rubygem]:        https://badge.fury.io/rb/clocale
 [rubygem-badge]:  https://badge.fury.io/rb/clocale.svg
-[travis]:         https://travis-ci.org/avdv/clocale
-[travis-badge]:   https://travis-ci.org/avdv/clocale.svg?branch=master
+[travis]:         https://www.travis-ci.com/avdv/clocale
+[travis-badge]:   https://www.travis-ci.com/avdv/clocale.svg?branch=master
 [appveyor]:       https://ci.appveyor.com/project/avdv/clocale/branch/master
 [appveyor-badge]: https://ci.appveyor.com/api/projects/status/l7pp3mjqvocb2n9r/branch/master?svg=true
 [codecov]:        https://codecov.io/gh/avdv/clocale
