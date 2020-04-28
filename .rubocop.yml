@@ -4,13 +4,14 @@ AllCops:
   Exclude:
     - 'vendor/**/*'
   DisplayCopNames: true
+  NewCops: enable
   TargetRubyVersion: 2.4
+
+Layout/LineLength:
+  Max: 100
 
 Metrics/AbcSize:
   Max: 20
-
-Metrics/LineLength:
-  Max: 100
 
 Style/BlockComments:
   Exclude:
