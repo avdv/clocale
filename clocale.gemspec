@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 13.0.0'
   spec.add_development_dependency 'rake-compiler', '~> 1.1.0'
   spec.add_development_dependency 'rspec', '~> 3.9.0'
-  spec.add_development_dependency 'rubocop', '~> 0.86.0'
+  spec.add_development_dependency 'rubocop', '~> 0.87.0'
   spec.add_development_dependency 'rubocop-rspec', '~> 1.41.0'
   spec.add_development_dependency 'rubygems-tasks', '~> 0.2.4'
 end
