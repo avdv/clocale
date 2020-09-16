@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-Gem::Specification.new do |spec|
-  CLOCALE_VERSION = '0.0.4'
+CLOCALE_VERSION = '0.0.4'
 
+Gem::Specification.new do |spec|
   is_tagged = ENV['TRAVIS_TAG'] == "v#{CLOCALE_VERSION}"
   is_origin = ENV['TRAVIS_REPO_SLUG'] == 'avdv/clocale'
   job_number = ENV['TRAVIS_JOB_NUMBER']
