@@ -1,8 +1,8 @@
 # frozen_string_literal: true
 
-Gem::Specification.new do |spec|
-  CLOCALE_VERSION = '0.0.4'
+CLOCALE_VERSION = '0.0.4'
 
+Gem::Specification.new do |spec|
   is_tagged = ENV['TRAVIS_TAG'] == "v#{CLOCALE_VERSION}"
   is_origin = ENV['TRAVIS_REPO_SLUG'] == 'avdv/clocale'
   job_number = ENV['TRAVIS_JOB_NUMBER']
@@ -35,7 +35,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency 'rake', '~> 13.0.0'
   spec.add_development_dependency 'rake-compiler', '~> 1.1.0'
   spec.add_development_dependency 'rspec', '~> 3.9.0'
-  spec.add_development_dependency 'rubocop', '~> 0.90.0'
+  spec.add_development_dependency 'rubocop', '~> 0.91.0'
   spec.add_development_dependency 'rubocop-rspec', '~> 1.43.1'
   spec.add_development_dependency 'rubygems-tasks', '~> 0.2.4'
 end
