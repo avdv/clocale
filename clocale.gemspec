@@ -23,7 +23,7 @@ Gem::Specification.new do |spec|
   spec.homepage      = 'https://github.com/avdv/clocale'
   spec.license       = 'MIT'
 
-  spec.required_ruby_version = '>= 2.4'
+  spec.required_ruby_version = '>= 2.5'
 
   spec.extensions = %w[ext/clocale/extconf.rb]
 

@@ -1,5 +1,3 @@
-dist: xenial
-
 conditions: v1
 
 if: branch = master OR tag IS present
@@ -8,13 +6,17 @@ os:
   - linux
   - osx
 
+
+dist:      bionic
+osx_image: xcode10.2
+
 language: ruby
 
 rvm:
-  - '2.4'
   - '2.5'
   - '2.6'
   - '2.7'
+  - '3.0'
 
 before_install:
   - gem --version
