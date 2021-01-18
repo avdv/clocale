@@ -9,8 +9,7 @@ environment:
     - RUBY_VERSION: 25-x64
     - RUBY_VERSION: 26-x64
     - RUBY_VERSION: 27-x64
-# FIXME: Appveyor does not support Ruby 3.0 yet
-#    - RUBY_VERSION: 30-x64
+    - RUBY_VERSION: 30-x64
 
 cache:
   - vendor/bundle
