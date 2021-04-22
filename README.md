@@ -1,9 +1,9 @@
-# clocale [![rubygem-badge][]][rubygem] [![travis-badge][]][travis] [![appveyor-badge][]][appveyor] [![codecov-badge][]][codecov] [![dependabot-b][]][dependabot]
+# clocale [![rubygem-badge][]][rubygem] [![github-badge][]][workflow] [![appveyor-badge][]][appveyor] [![codecov-badge][]][codecov] [![dependabot-b][]][dependabot]
 
 [rubygem]:        https://badge.fury.io/rb/clocale
 [rubygem-badge]:  https://badge.fury.io/rb/clocale.svg
-[travis]:         https://www.travis-ci.com/avdv/clocale
-[travis-badge]:   https://www.travis-ci.com/avdv/clocale.svg?branch=master
+[workflow]:       https://github.com/avdv/clocale/actions/workflows/test.yml
+[github-badge]:   https://github.com/avdv/clocale/actions/workflows/test.yml/badge.svg
 [appveyor]:       https://ci.appveyor.com/project/avdv/clocale/branch/master
 [appveyor-badge]: https://ci.appveyor.com/api/projects/status/l7pp3mjqvocb2n9r/branch/master?svg=true
 [codecov]:        https://codecov.io/gh/avdv/clocale
