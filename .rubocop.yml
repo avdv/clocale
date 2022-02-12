@@ -3,6 +3,7 @@ require: rubocop-rspec
 AllCops:
   Exclude:
     - 'vendor/**/*'
+    - 'tmp/**/*'
   DisplayCopNames: true
   NewCops: enable
   TargetRubyVersion: 2.5
