@@ -1,4 +1,4 @@
-# clocale [![rubygem-badge][]][rubygem] [![github-badge][]][workflow] [![appveyor-badge][]][appveyor] [![codecov-badge][]][codecov] [![dependabot-b][]][dependabot]
+# clocale [![rubygem-badge][]][rubygem] [![github-badge][]][workflow] [![appveyor-badge][]][appveyor] [![codecov-badge][]][codecov]
 
 [rubygem]:        https://badge.fury.io/rb/clocale
 [rubygem-badge]:  https://badge.fury.io/rb/clocale.svg
@@ -8,8 +8,6 @@
 [appveyor-badge]: https://ci.appveyor.com/api/projects/status/l7pp3mjqvocb2n9r/branch/master?svg=true
 [codecov]:        https://codecov.io/gh/avdv/clocale
 [codecov-badge]:  https://codecov.io/gh/avdv/clocale/branch/master/graph/badge.svg
-[dependabot]:     https://dependabot.com
-[dependabot-b]:   https://api.dependabot.com/badges/status?host=github&repo=avdv/clocale
 
 This Ruby extension provides access to the C library's `setlocale`, `strxfrm`
 and `strcoll` functions which are inherently useful for proper sorting
