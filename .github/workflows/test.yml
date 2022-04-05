@@ -5,25 +5,15 @@ name: Ruby
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [ test ]
+    tags: [ 'x[0-9]*' ]
 
 jobs:
   test:
 
-    runs-on: ${{ matrix.os }}
-    strategy:
-      matrix:
-        os: [macos-latest, ubuntu-latest]
-        ruby-version: ['2.6', '2.7', '3.0']
-
     steps:
-    - uses: actions/checkout@v2
-    - name: Set up Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: ${{ matrix.ruby-version }}
-        bundler-cache: true # runs 'bundle install' and caches installed gems automatically
-    - name: Run tests
-      run: bundle exec rake
+    - name: check
+      run: |
+        echo $GITHUB_REF
+        echo $GITHUB_EVENT_NAME
+        echo $GITHUB_REF_TYPE
