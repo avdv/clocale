@@ -32,7 +32,7 @@ Gem::Specification.new do |spec|
   end
 
   spec.add_development_dependency 'codecov', '~> 0.6.0'
-  spec.add_development_dependency 'rake', '~> 13.0.0'
+  spec.add_development_dependency 'rake', '~> 13.1.0'
   spec.add_development_dependency 'rake-compiler', '~> 1.2.0'
   spec.add_development_dependency 'rspec', '~> 3.12.0'
   spec.add_development_dependency 'rubocop', '~> 0.93.0'
