@@ -3,7 +3,8 @@ updates:
 - package-ecosystem: bundler
   directory: "/"
   schedule:
-    interval: daily
+    interval: weekly
+    day: wednesday
     time: "04:00"
   open-pull-requests-limit: 10
   ignore:
@@ -12,3 +13,8 @@ updates:
     - 0.4.2
     - 0.4.3
     - 0.5.0
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    # Check for updates to GitHub Actions every week
+    interval: "weekly"
